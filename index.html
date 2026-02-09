@@ -6,13 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SD Web 2 Assignment 1</title>
   <link rel="stylesheet" href="main.css">
-  <script src="index.js"></script>
+  <script src="script.js"></script>
 </head>
 <div>
   <div>
     <nav>
       <div><a href="index.html">Home</a></div>
       <!-- Create a list with placeholder links for 3 other pages -->
+      <div><a>About Us</a></div>
+      <div><a>Contact Us</a></div>
     </nav>
   </div>
   <div>
@@ -30,6 +32,7 @@
         <h1>Results:</h1>
         <ul id="names-list">
           <!-- Character names will be populated here -->
+           <script>createList()</script>
         </ul>
       </div>
     </div>
@@ -41,6 +44,7 @@
         <h1>Results:</h1>
         <ul id="young-characters-list">
           <!-- Filtered character names will be populated here -->
+          <script>filterArray()</script>
         </ul>
       </div>
     </div>
@@ -54,6 +58,7 @@
         <h1>Results:</h1>
         <ul id="function-list">
           <!-- Function-generated list will be populated here -->
+          <script>renderCharacterNames(characters)</script>
         </ul>
       </div>
     </div>
@@ -67,6 +72,7 @@
         <h1>Results:</h1>
         <ul id="age-filter-list">
           <!-- Age-filtered results will be populated here -->
+           <script>renderCharactersByAge(characters, 35)</script>
         </ul>
       </div>
     </div>
